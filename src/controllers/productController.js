@@ -31,6 +31,6 @@ module.exports = {
     async destroy(req, res) {
         await product.findByIdAndRemove(req.params.id);
 
-        return res.send(true);
+        return res.send();
     }
 };
